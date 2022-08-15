@@ -19,7 +19,6 @@ router.post('/forgotPassword', authController.forgotPassword);
 router.patch('/resetPassword/:token', authController.resetPassword);
 
 router.use(authController.protect);
-
 router.delete('/closeAccount', deleteUser);
 router.get('/history', getUserHistory)
 router.patch('/updatePassword', authController.updatePassword);
