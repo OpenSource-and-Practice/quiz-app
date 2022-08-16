@@ -1,0 +1,35 @@
+
+nav{
+    inline-size: 100%;
+    display: flex;
+    block-size: 7em;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0; right: 0; left: 0;
+    background-color: white;
+    z-index: 1000;
+    padding: 0 7em;
+    /* outline: 1px solid black; */
+}
+nav .nav-items{
+    display: flex;
+}
+
+
+nav .nav-items .nav-element{
+    font-size: 1em;
+    font-weight: 900;
+    color:  var(--defaultColour);
+    text-decoration: none;
+}
+
+nav .nav-items .nav-element:hover {
+    color:#03141e;
+}
+
+
+
+.nav-items .nav-element:not(:last-child){
+    margin-right: 3.4rem;
+}
