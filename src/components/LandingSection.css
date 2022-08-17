@@ -1,0 +1,68 @@
+.bg {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: .7fr 1fr;
+    block-size: calc(100vh - 7rem);
+}
+
+.bg .wel-text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.bg .wel-text .text-section {
+    margin-bottom: 4em;
+}
+
+.bg h1 {
+    font-size: 4em;
+    font-weight: 700;
+    line-height: 1.2em;
+    color: #353D42;
+    margin: .2em 0;
+}
+
+.bg p {
+    font-weight: 500;
+    font-size: 1.25em;
+}
+
+Link {
+    width: 19.7em;
+    height: 4.4em;
+}
+
+.btn-getstarted {
+    width: 12.7em;
+    height: 3em;
+    border-radius: 8px;
+    padding: 0;
+    background-color: var(--defaultColour);
+    border: none;
+    outline: none;
+    color: var(--inputFieldColor);
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+
+
+button:hover {
+    background-color: var(--defaultColourDeep);
+}
+
+/* Image Section */
+
+.wel-bg {
+    height: 100%;
+    width: 100%;
+
+}
+
+.wel-bg img {
+    width: 85%;
+}

@@ -1,7 +1,10 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Auth.css";
 
-function Login(props) {
+function Login(props)
+{
+  const [loginMatch, setLoginMatch] = useState(true)
   return (
     <div className="container">
       <form action="submit">
@@ -15,6 +18,9 @@ function Login(props) {
           <label htmlFor="password">Password</label>
           <input type="password" id="password" />
         </div>
+        {loginMatch || (
+          <p className="pwsd-match-text">Incorrect Email or password</p>
+        )}
         <section className="remember-password">
           <input type="checkbox" />
           <p>Remember Password</p>
